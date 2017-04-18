@@ -1,0 +1,31 @@
+{
+  "name": "basic-proyect-vue",
+  "version": "0.0.1",
+  "description": "Basic project settings for Vue.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue.js",
+    "browserify",
+    "sass",
+    "browserSync"
+  ],
+  "author": "Francisco Manzano Magaña <keoh77@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.2.6"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "browserify": "^14.3.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8"
+  }
+}
