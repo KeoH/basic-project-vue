@@ -6,20 +6,15 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <header>
-      <h1>Index</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="/hola.html">Hola</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    {{> header }}
+
+
     <div id="app">
-      {{message}}
+      App Vue, <span v-html="message"></span>
     </div>
+
+
     <script src="https://unpkg.com/vue@2.2.6/dist/vue.min.js"></script>
-    <script src="js/main.js" charset="utf-8"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

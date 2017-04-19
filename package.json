@@ -25,6 +25,7 @@
     "gulp-browserify": "^0.5.1",
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.1",
+    "gulp-hb": "^6.0.2",
     "gulp-sass": "^3.1.0",
     "gulp-util": "^3.0.8"
   }

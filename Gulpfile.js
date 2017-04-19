@@ -6,7 +6,7 @@ let gutil         = require('gulp-util');
 let browserify    = require('gulp-browserify');
 let concat        = require('gulp-concat');
 let clean         = require('gulp-clean');
-
+let hb            = require('gulp-hb');
 
 gulp.task('sass', ()=>{
   gulp.src('src/sass/main.sass')
@@ -41,10 +41,22 @@ gulp.task('html', ()=>{
     .pipe(browserSync.reload({stream:true}));
 });
 
+gulp.task('hbs', function () {
+    return gulp
+        .src('./src/hbs/templates/**/*.html')
+        .pipe(hb({
+            partials: './src/hbs/partials/**/*.hbs',
+            helpers: './src/hbs/helpers/*.js',
+            data: './src/hbs/data/**/*.{js,json}'
+        }))
+        .pipe(gulp.dest('./dist'));
+});
+
 gulp.task('watch', ()=>{
   gulp.watch('src/sass/**/*.sass', ['sass']);
   gulp.watch('src/js/**/*.js', ['browserify']);
-  gulp.watch('src/**/*.html', ['html']);
+  gulp.watch('src/hbs/templates/*.html', ['hbs','html']);
+  gulp.watch('src/**/*.hbs', ['hbs', 'html']);
 });
 
-gulp.task('default', ['html','browser-sync','sass', 'browserify', 'watch']);
+gulp.task('default', ['hbs','browser-sync','sass', 'browserify', 'watch']);
