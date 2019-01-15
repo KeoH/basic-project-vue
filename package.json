@@ -15,18 +15,18 @@
   "author": "Francisco Manzano Magaña <keoh77@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "vue": "^2.2.6"
+    "vue": "^2.5.22"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "browserify": "^14.3.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
+    "browser-sync": "^2.26.3",
+    "browserify": "^16.2.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-browserify": "^0.5.1",
-    "gulp-clean": "^0.3.2",
+    "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
-    "gulp-hb": "^6.0.2",
-    "gulp-sass": "^3.1.0",
+    "gulp-hb": "^7.0.1",
+    "gulp-sass": "^4.0.2",
     "gulp-util": "^3.0.8"
   }
 }
